@@ -1,14 +1,11 @@
 # changing directory to code project
-function r { cd ~/Dropbox/Code/rails3/$1; }
-function g { cd ~/Dropbox/Code/git/$1; }
+function r { cd ~/Dropbox/Code/rails31/$1; }
+function r3 { cd ~/Dropbox/Code/rails3/$1; }
+function gi { cd ~/Dropbox/Code/git/$1; }
+function cb { cd ~/Dropbox/Code/cuba/$1; }
+function rb { cd ~/Dropbox/Code/ruby/$1; }
+function si { cd ~/Dropbox/Code/sinatra/$1; }
 
-# alternative to "rails" command to use templates
-function railsapp {
-  template=$1
-  appname=$2
-  shift 2
-  rails $appname -m http://github.com/ryanb/rails-templates/raw/master/$template.rb $@
-}
 
 # misc
 alias reload='. ~/.bash_profile'
